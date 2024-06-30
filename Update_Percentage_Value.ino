@@ -3,7 +3,7 @@
 #include <ArduinoJson.h>
 
 const char* ssid = "Inventor";
-const char* password = "30010231";
+const char* password = "1234567890";
 
 void setup() {
   Serial.begin(115200);
@@ -34,7 +34,7 @@ void sendDataToServer(const char* fanName, const char* percentage) {
   HTTPClient http;
 
   // Your server URL
-  String serverUrl = "https://beemultiscent.com/iot/diffuser";
+  String serverUrl = "https://example.com/iot/difusser";
 
   // Create JSON object
   DynamicJsonDocument jsonDoc(200);
